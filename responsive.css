@@ -8,6 +8,9 @@ Das modernste, wenn ich es nicht unterscheiden brauche (also für alle Medientyp
   a {
     font-size: 20px;
   }
+  .nav_links {
+        font-size: 18px;
+    }
   h1 {
     font-size: 56px;
   }

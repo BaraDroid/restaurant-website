@@ -12,6 +12,8 @@
   --main-theme: #f85e04;
   --bgr-color: #1a1a1a;
   --bgr-footer: #303030;
+  --text-color: #ddd;
+  --overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -60,6 +62,7 @@ h2 {
   font-family: "Catamaran";
   font-weight: 700;
   color: white;
+  text-transform: uppercase;
   text-decoration: underline var(--main-theme);
   text-underline-offset: 8px;
   margin: 8px;
@@ -74,12 +77,13 @@ header {
   color: var(--main-theme);
   padding: 24px 16px;
   font-size: 12px;
-  gap: 8px;
+  gap: 16px;
 }
 
 .nav_links {
-    text-transform: uppercase;
-    text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.25rem;
 }
 
 section {
@@ -96,7 +100,7 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; /*soll man auch "präventiv" tun*/
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--overlay);
   /*außer solcher shadow kann man das overlay zusammen in background kreiren
   man kann hier nur gradient machen, keine Farbe
   ein div in halb durchsichtiger Farbe würde bestimmt auch funktionieren etc.
@@ -104,7 +108,7 @@ section {
 }
 
 .hero p {
-  color: #ddd;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -118,6 +122,31 @@ section {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.about_text p {
+  color: var(--text-color);
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 8px;
+  height: 50dvh;
+  align-self: center;
+}
+
+.pictures img {
+  width: auto;
+  height: auto;
+  max-height: 100px;
+}
+
+.left_img {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  max-height: 200px;
 }
 
 button {
@@ -151,31 +180,10 @@ button:hover {
   color: white;
 }
 
-.pictures {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 8px;
-  height: 50dvh;
-  align-self: flex-start;
-}
-
-.pictures img {
-  width: auto;
-  height: auto;
-  max-height: 100px;
-}
-
-.left_img {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  max-height: 200px;
-}
-
 .openings {
   margin: 24px;
   background-image: url(images/openings-bgr.jpg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--overlay);
   display: grid;
   place-items: center;
 }
