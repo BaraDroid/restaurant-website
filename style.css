@@ -23,6 +23,7 @@
   scroll-behavior: smooth;
   text-decoration: none;
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 a {
@@ -70,7 +71,7 @@ h2 {
 
 header {
   background-color: black;
-  height: 5dvh;
+  height: 8dvh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -91,11 +92,8 @@ section {
 }
 
 .hero {
-  height: 87dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 92dvh;
   background: url("images/hero-bgr.jpg");
   background-position: center;
   background-size: cover;
@@ -107,15 +105,29 @@ section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-bgr.jpg"); */
 }
 
-.hero p {
+.hero_wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_wrapper p {
   color: var(--text-color);
   text-align: center;
 }
 
+.hero_wrapper a {
+  margin-top: 24px;
+}
+
 .about {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 16px;
+  align-items: center;
+  max-width: 1440px;
 }
 
 .about_text {
@@ -130,16 +142,22 @@ section {
 
 .pictures {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template: 1fr / 1fr 1fr;
   gap: 8px;
-  height: 50dvh;
-  align-self: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .pictures img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.small_imgs {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
 }
 
 .left_img {
@@ -147,7 +165,7 @@ section {
   grid-row: 1 / span 2;
 }
 
-button {
+.action_button {
   padding: 16px;
   border-radius: 16px;
   background-color: var(--main-theme);
@@ -159,7 +177,7 @@ button {
   transition: all 0.225s ease-in-out;
 }
 
-button:hover {
+.action_button:hover {
   /* background-color: rgba(0, 0, 0, 0); */
   background-color: transparent;
   border: 1px solid var(--main-theme);
@@ -179,11 +197,13 @@ button:hover {
 }
 
 .openings {
-  margin: 24px;
   background-image: url(images/openings-bgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: var(--overlay);
   display: grid;
   place-items: center;
+  width: 100%;
 }
 
 td {
@@ -194,6 +214,7 @@ td {
 
 table td:first-child {
   padding-right: 8vw;
+  color: var(--text-color);
 }
 
 table td:nth-child(2) {
@@ -243,4 +264,10 @@ footer {
 
 .hero_btn:hover a {
   color: var(--main-theme);
+}
+
+.content_wrapper {
+  display: grid;
+  justify-content: center;
+  width: 100%;
 }

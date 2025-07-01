@@ -5,44 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganesha Jay</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
     <header>
         <a href="#aboutSection" class="nav_links">Über<wbr> uns</a>
-        <a href="#" class="nav_links">Speise<wbr>karte</a>
+        <a href="menu.html" target="_blank" class="nav_links">Speise<wbr>karte</a>
         <a href="#info" class="nav_links">Öffnungs<wbr>zeiten</a>
     </header>
 
     <main>
         <section class="hero">
-            <h1>GANESHA JAY</h1>
-            <p>Original indisches Restaurant</p>
-            <button class="hero_btn"><a href="#info">Öffnungszeiten ansehen</a></button>
-            <!--ich konnte hier nur <a> machen, wäre fast einfacher von Styling her-->
-        </section>
-        <section class="about" id="aboutSection">
-            <div class="about_text">
-                <h2>Über uns</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente vero deleniti laudantium
-                    consequuntur quibusdam tempora iusto ratione fugit aut sequi, porro amet reprehenderit, magnam
-                    impedit
-                    nam nemo esse eveniet magni enim maiores commodi odit id quas? Laboriosam enim culpa dolore, dolorum
-                    incidunt inventore aspernatur nulla expedita sunt, architecto alias.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim amet, exercitationem nihil
-                    deserunt, nisi saepe tempore molestias dolor accusantium quis asperiores cumque rem. Magni sunt
-                    dignissimos, enim fugiat vitae expedita debitis! Itaque reprehenderit aliquam nobis, odio soluta
-                    dolorem
-                    quibusdam inventore unde, labore nulla perferendis fuga rerum architecto! Alias, incidunt.</p>
-                <button>Zur Speisekarte</button>
+            <div class="hero_wrapper">
+                <h1>GANESHA JAY</h1>
+                <p>Original indisches Restaurant</p>
+                <a href="#info" class="action_button">Öffnungszeiten ansehen</a>
             </div>
 
-            <div class="pictures">
-                <img class="left_img" src="images/matka-kulfi-6603519_1280.jpg" alt="indian dessert with berries">
-                <img src="images/manchurian-6971355_1280.jpg" alt="indian dish on a plate">
-                <img src="images/spices-7168571_1280.jpg" alt="colorful spices on a plate">
+        </section>
+        <section class="content_wrapper">
+            <div class="about" id="aboutSection">
+                <div class="about_text">
+                    <h2>Über uns</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente vero deleniti
+                        laudantium
+                        consequuntur quibusdam tempora iusto ratione fugit aut sequi, porro amet reprehenderit, magnam
+                        impedit
+                        nam nemo esse eveniet magni enim maiores commodi odit id quas? Laboriosam enim culpa dolore,
+                        dolorum
+                        incidunt inventore aspernatur nulla expedita sunt, architecto alias.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim amet, exercitationem
+                        nihil
+                        deserunt, nisi saepe tempore molestias dolor accusantium quis asperiores cumque rem. Magni sunt
+                        dignissimos, enim fugiat vitae expedita debitis! Itaque reprehenderit aliquam nobis, odio soluta
+                        dolorem
+                        quibusdam inventore unde, labore nulla perferendis fuga rerum architecto! Alias, incidunt.</p>
+                    <a href="menu.html" target="_blank" class="action_button">Zur Speisekarte</a>
+                </div>
+
+                <div class="pictures">
+                    <img class="left_img" src="images/matka-kulfi-6603519_1280.jpg" alt="indian dessert with berries">
+                    <div class="small_imgs">
+                        <img src="images/manchurian-6971355_1280.jpg" alt="indian dish on a plate">
+                        <img src="images/spices-7168571_1280.jpg" alt="colorful spices on a plate">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="openings" id="info">
@@ -78,19 +87,22 @@
                 </tr>
             </table>
         </section>
-        <section class="contact">
-            <img src="images/kontakt-foto.jpg" alt="empty resturant waiting for its guests">
-            <div>
-                <h2>Kontakt</h2>
-                <p>+49 123456789</p>
-                <p>indisches@restaurant.de</p>
-                <p>Musterstraße 51</p>
-                <p>12345 Musterstadt</p>
-                <div class="btn_panel">
-                    <button>Jetzt anrufen</button>
-                    <button class="inverted">Email schreiben</button>
+        <section class="content_wrapper">
+            <div class="contact">
+                <img src="images/kontakt-foto.jpg" alt="empty resturant waiting for its guests">
+                <div>
+                    <h2>Kontakt</h2>
+                    <p>+49 123456789</p>
+                    <p>indisches@restaurant.de</p>
+                    <p>Musterstraße 51</p>
+                    <p>12345 Musterstadt</p>
+                    <div class="btn_panel">
+                        <a href="tel:123456789" class="action_button">Jetzt anrufen</a>
+                        <a href="mailto:ganesha@jay.de" class="action_button inverted">Email schreiben</a>
+                    </div>
                 </div>
             </div>
+
         </section>
     </main>
 
