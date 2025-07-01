@@ -1,4 +1,4 @@
-#Indian Restaurant
+# Indian Restaurant
 
 This project is a static website for an restaurant. It serves as a practical exercise focused on modern CSS techniques and responsive web design.
 
