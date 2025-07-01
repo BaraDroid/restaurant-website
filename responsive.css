@@ -1,4 +1,10 @@
-@media only screen and (min-width: 481px) {
+/*only screen ist nur für Bildschirmgeräte, also nicht zB für Druckansicht.
+Das modernste, wenn ich es nicht unterscheiden brauche (also für alle Medientype), ist einfach 
+@media (min-width: 1000px) {} zu benutzen*/
+
+/*wenn ich hover für mobile Geräte brauche, kann ich es zum :active ändern*/
+
+@media (min-width: 481px) {
   a {
     font-size: 20px;
   }
@@ -16,7 +22,7 @@
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
     .header {
         justify-content: center;
         gap: 2dvw;
@@ -39,7 +45,7 @@
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
     .about {
         flex-direction: row;
     }
@@ -59,7 +65,7 @@
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
     body {
         display: flex;
         flex-direction: column;
