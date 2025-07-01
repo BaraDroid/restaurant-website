@@ -138,15 +138,13 @@ section {
 }
 
 .pictures img {
-  width: auto;
-  height: auto;
-  max-height: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 .left_img {
   grid-column: 1;
   grid-row: 1 / span 2;
-  max-height: 200px;
 }
 
 button {
