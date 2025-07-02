@@ -1,0 +1,29 @@
+.wrapper {
+    background-image: url("images/menu-images/paisley pattern.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    /* display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_content {
+    padding: 24px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.section {
+    
+}
+
+.menu_item {
+    width: 100%;
+    
+     height: 100px; background-color: green;
+}

@@ -12,7 +12,7 @@ CSS Variables (Custom Properties):
 Gaining hands-on experience with CSS variables to manage colors efficiently, making the stylesheet more maintainable and adaptable.
 
 CSS Grid Layout: 
-Implementing layout system using CSS Grid, particularly for complex sections like the image gallery (.pictures) in the "About Us" section.
+Implementing layout system using CSS Grid, particularly for complex sections like the image gallery (.pictures) in the "About Us" section and the menu.
 
 🛠️ Technologies Used
 HTML5: For structuring the content.
