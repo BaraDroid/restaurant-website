@@ -48,6 +48,13 @@ Das modernste, wenn ich es nicht unterscheiden brauche (also für alle Medientyp
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    .menu_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 24px;
+}
 }
 
 @media (min-width: 1000px) {
@@ -69,6 +76,4 @@ Das modernste, wenn ich es nicht unterscheiden brauche (also für alle Medientyp
         gap: 10%;
     }
 }
-
-/*************+*MENU*********************/
 
