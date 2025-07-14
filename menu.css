@@ -35,16 +35,19 @@
 .menu_item {
   width: 100%;
   height: fit-content;
-  background-color: green;
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  border: 1px solid var(--main-theme);
+  border-radius: 8px;
 }
 
 .dish_image {
   height: 100px;
   width: 100px;
+  display: block;
+    object-fit: cover;
 }
 
 .dish_titel {
@@ -58,4 +61,16 @@
   gap: 8px;
   align-items: center;
   text-align: left;
+}
+
+.category_title {
+    margin-top: 3rem;
+}
+
+h3 {
+    color: var(--main-theme);
+}
+
+button {
+    margin-top: 3rem;
 }

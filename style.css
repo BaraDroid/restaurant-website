@@ -167,7 +167,7 @@ section {
 
 .action_button {
   padding: 16px;
-  border-radius: 16px;
+  border-radius: 8px;
   background-color: var(--main-theme);
   border: 1px solid var(--main-theme);
   width: fit-content;
