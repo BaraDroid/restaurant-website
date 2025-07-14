@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="responsive.css">
+    <!-- <link href="/path/to/print.css" media="print" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -120,17 +121,19 @@
                 </div>
             </div>
 
-            <button class="action_button inverted" onclick="backToMain()"><a href="#" return false>Zurück zur Hauptseite</a></button>
-
+            <a href="#" return false class="action_button inverted backbtn" onclick="backToMain()">Zurück zur Hauptseite</a>
+            <a href="" return false class="action_button inverted backbtn" onclick="printPage()">Drücken</a>
         </main>
     </div>
     <script>
         function backToMain() {
             window.close();
         }
+
+        function printPage() {
+            window.print();
+        }
     </script>
 </body>
 
 </html>
-
- <!--TO DO: eine Print/loadmöglichkeit mit print media queries -->

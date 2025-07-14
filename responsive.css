@@ -77,3 +77,17 @@ Das modernste, wenn ich es nicht unterscheiden brauche (also für alle Medientyp
     }
 }
 
+@media print {
+  .wrapper {
+    background-color: white;
+    box-shadow:unset;
+  }
+
+  .inverted, h1 {display: none;}
+
+  .menu_item {
+    break-inside: avoid;
+  }
+
+  h2:first-of-type {margin-top: none;}
+}

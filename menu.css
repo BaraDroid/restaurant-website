@@ -71,6 +71,8 @@ h3 {
     color: var(--main-theme);
 }
 
-button {
+.backbtn {
+    display: inline-block;
     margin-top: 3rem;
+    margin-right: 3rem;
 }
